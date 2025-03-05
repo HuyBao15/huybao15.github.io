@@ -41,22 +41,25 @@ div:hover {
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
 }
 
-/* Style cho tiêu đề chính (h1) */
+/* Style cho tiêu đề chính (h1) - Không xuống dòng, hiển thị trên cùng dòng */
 h1 {
     color: #2c3e50;
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    display: inline-block; /* Hiển thị trên cùng dòng */
+    margin-right: 1rem; /* Khoảng cách giữa h1 và các h3 */
     animation: fadeIn 2s ease-in-out;
     text-shadow: 0 0 10px rgba(44, 62, 80, 0.5);
+    white-space: nowrap; /* Ngăn không cho xuống dòng */
 }
 
-/* Style cho các tiêu đề phụ (h3) */
+/* Style cho các tiêu đề phụ (h3) - Cũng hiển thị trên cùng dòng */
 h3 {
     color: #34495e;
     font-size: 1.2rem;
-    margin: 0.8rem 0;
+    display: inline-block; /* Hiển thị trên cùng dòng */
+    margin: 0.5rem 0.5rem; /* Khoảng cách giữa các h3 */
     line-height: 1.5;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -93,9 +96,11 @@ h1 {
 
     h1 {
         font-size: 2rem;
+        margin-right: 0.5rem; /* Giảm khoảng cách trên màn hình nhỏ */
     }
 
     h3 {
         font-size: 1rem;
+        margin: 0.3rem 0.3rem;
     }
 }
